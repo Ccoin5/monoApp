@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/alex321krug-gmailcoms-projects/v0-app-telegram](https://vercel.com/alex321krug-gmailcoms-projects/v0-app-telegram)**
+
 
 ## Build your app
 
