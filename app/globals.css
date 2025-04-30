@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 21, 28, 59;
+  --background-end-rgb: 13, 17, 38;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #f6b73c, #ea5455, #9b59b6, #3498db, #2ecc71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 6s ease infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+.slider {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider > div {
+  scroll-snap-align: start;
+}
